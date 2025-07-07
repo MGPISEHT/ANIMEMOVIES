@@ -22,7 +22,7 @@ Follow these steps to install and run the project locally:
 
 ```bash
 git clone https://github.com/MGPISEHT/TMDBMovies.git
-cd TMDBMovies
+cd ANIMEMOVIE
 ````
 
 ### 2. Install Dependencies
@@ -48,22 +48,26 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-Then, update your vite.config.js file:
+Then, update your tailwind.config.js file:
 ```
 
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-});
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
 ```
 
 Next, in src/index.css, include the Tailwind directives:
 
 ```
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
 ### 4. 🏃‍➡️ Run the Development Server
