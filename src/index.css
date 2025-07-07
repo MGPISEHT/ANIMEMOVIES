@@ -1,0 +1,44 @@
+/* url font family css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15+Charted&display=swap");
+/* item use to tailwind css framwork */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* use components to change html font full pages or full web site */
+@layer components {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+  /* container use to change all class to call */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #animemovie-logo {
+    font-family: "Jersey 15 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 255, 64);
+    cursor: pointer;
+  }
+  /* respown sive screen */
+  @media (min-width: 760px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1100px;
+    }
+  }
+}
