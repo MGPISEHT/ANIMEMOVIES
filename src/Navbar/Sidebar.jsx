@@ -1,6 +1,6 @@
 import React from "react";
 import { Shuffle, Undo2 } from "lucide-react";
-const links = [1,1,1,1,1,1,1,1,1,1,1,1];
+const links = [1];
 const Sidebar = () => {
   return (
     <div className="w-[15%] h-full bg-slate-900 overflow-auto hidden">
