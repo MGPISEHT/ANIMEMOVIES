@@ -1,24 +1,22 @@
-import React from "react";
-
-import anime_cute from "../../assets/Images/anime-cute.jpg";
+import anime_cute from "../assets/Images/anime-cute.jpg";
 import { GoDotFill } from "react-icons/go";
 import { GrFormNext } from "react-icons/gr";
 
-const cardPopulors = [1, 2, 3, 4, 5];
-const Populor = () => {
+const cardLateds = [1, 2, 3, 4, 5];
+const LatedEpisode = () => {
   return (
     <div>
-      <div className="w-[370px] bg-white ml-1.5 mt-1 ">
+      <div className="w-[370px] bg-white ml-1.5 mt-1">
         <table className="text-black w-full h-full">
           <tr className="">
-            <td className="bg-slate-600 h-[48px] w-[370px] flex items-center px-5 font-sans font-semibold text-lime-400">
-              <h1>Populor Movies</h1>
+            <td className="bg-slate-600 h-[48px] flex items-center w-[370px]  px-5 font-sans font-semibold text-lime-400">
+              <h1>Lated Expisodes</h1>
             </td>
           </tr>
           <tr>
-            {cardPopulors.map(() => (
+            {cardLateds.map(() => (
               <div>
-                <td className="w-[370px] h-[80px] flex items-center px-5 bg-slate-700">
+                <td className="w-[370px] h-[80px] flex items-center px-5 bg-slate-700 ">
                   <div className="cursor-pointer">
                     <img
                       src={anime_cute}
@@ -69,4 +67,4 @@ const Populor = () => {
   );
 };
 
-export default Populor;
+export default LatedEpisode;

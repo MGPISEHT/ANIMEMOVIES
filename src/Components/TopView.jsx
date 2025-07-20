@@ -1,22 +1,22 @@
 import React from "react";
 
-import anime_cute from "../../assets/Images/anime-cute.jpg";
+import anime_cute from "../assets/Images/anime-cute.jpg";
 import { GoDotFill } from "react-icons/go";
 import { GrFormNext } from "react-icons/gr";
 
-const cardLateds = [1, 2, 3, 4, 5];
-const LatedEpisode = () => {
+const cardTopViews = [1, 2, 3, 4, 5];
+const TopView = () => {
   return (
     <div>
       <div className="w-[370px] bg-white ml-1.5 mt-1">
         <table className="text-black w-full h-full">
           <tr className="">
-            <td className="bg-slate-600 h-[48px] flex items-center w-[370px]  px-5 font-sans font-semibold text-lime-400">
-              <h1>Lated Expisodes</h1>
+            <td className="bg-slate-600 w-[370px] h-[48px] flex items-center px-5 font-sans font-semibold text-lime-400">
+              <h1>Top Viewed</h1>
             </td>
           </tr>
           <tr>
-            {cardLateds.map(() => (
+            {cardTopViews.map(() => (
               <div>
                 <td className="w-[370px] h-[80px] flex items-center px-5 bg-slate-700 ">
                   <div className="cursor-pointer">
@@ -69,4 +69,4 @@ const LatedEpisode = () => {
   );
 };
 
-export default LatedEpisode;
+export default TopView;

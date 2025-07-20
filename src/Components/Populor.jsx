@@ -1,22 +1,22 @@
 import React from "react";
 
-import anime_cute from "../../assets/Images/anime-cute.jpg";
+import anime_cute from "../assets/Images/anime-cute.jpg";
 import { GoDotFill } from "react-icons/go";
 import { GrFormNext } from "react-icons/gr";
 
-const cardTopFavoriteds = [1, 2, 3, 4, 5];
-const TopFavorith = () => {
+const cardPopulors = [1, 2, 3, 4, 5];
+const Populor = () => {
   return (
     <div>
-      <div className="w-[370px] bg-white ml-1.5 mt-1">
+      <div className="w-[370px] bg-white ml-1.5 mt-1 ">
         <table className="text-black w-full h-full">
-          <tr>
+          <tr className="">
             <td className="bg-slate-600 h-[48px] w-[370px] flex items-center px-5 font-sans font-semibold text-lime-400">
-              <h1>Top Favorited</h1>
+              <h1>Populor Movies</h1>
             </td>
           </tr>
           <tr>
-            {cardTopFavoriteds.map(() => (
+            {cardPopulors.map(() => (
               <div>
                 <td className="w-[370px] h-[80px] flex items-center px-5 bg-slate-700">
                   <div className="cursor-pointer">
@@ -69,4 +69,4 @@ const TopFavorith = () => {
   );
 };
 
-export default TopFavorith;
+export default Populor;

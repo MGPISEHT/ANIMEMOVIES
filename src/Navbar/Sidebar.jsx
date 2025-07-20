@@ -3,7 +3,7 @@ import { Shuffle, Undo2 } from "lucide-react";
 const links = [1];
 const Sidebar = () => {
   return (
-    <div className="w-[15%] h-full bg-slate-900 overflow-auto hidden">
+    <div className="w-[15%] h-full bg-slate-900 overflow-auto">
       <div>
         <div className="flex mt-3 ml-3 bg-slate-800 w-[90px]  p-2 rounded-3xl text-[15px] hover:bg-slate-600 transition ease-in-out duration-300 cursor-pointer overflow-hidden">
           <Undo2 className="size-5 mr-1 " />
